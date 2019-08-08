@@ -9,10 +9,10 @@ class GridList extends StatelessWidget {
       ),
       body: Center(
         child: GridView.count(
-          // Create a grid with 2 columns. If you change the scrollDirection to
-          // horizontal, this produces 2 rows.
+          // Cria um grid com 2 colunas. Se mudar o scrollDirection para
+          // horizontal, serão produzidas duas linhas.
           crossAxisCount: 2,
-          // Generate 100 widgets that display their index in the List.
+          // Gera 100 widgets que mostrarão seus index na List.
           children: List.generate(100, (index) {
             return Center(
               child: Text(

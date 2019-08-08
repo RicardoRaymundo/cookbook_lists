@@ -13,8 +13,11 @@ class HorizontalList extends StatelessWidget {
         margin: EdgeInsets.symmetric(vertical: 20.0),
         height: 200.0,
         child: ListView(
+          // Definindo diração de rolagem da lista para horizontal
           scrollDirection: Axis.horizontal,
           children: <Widget>[
+            // Componentes da lista
+
             Container(
               width: 160.0,
               color: Colors.red,

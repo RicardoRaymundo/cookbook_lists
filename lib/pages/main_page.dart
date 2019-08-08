@@ -13,10 +13,10 @@ class MainPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
+              // Botoes para navegar para os exemplos
               RaisedButton(
                 child: Text('Grid List'),
                 onPressed: () {
-                  // Navigate to the second screen using a named route.
                   Navigator.pushNamed(context, '/GridList');
                 },
               ),
@@ -24,38 +24,39 @@ class MainPage extends StatelessWidget {
               RaisedButton(
                 child: Text('Horizontal List'),
                 onPressed: () {
-                  // Navigate to the second screen using a named route.
                   Navigator.pushNamed(context, '/HorizontalList');
                 },
               ),
               RaisedButton(
                 child: Text('Mixed List'),
                 onPressed: () {
-                  // Navigate to the second screen using a named route.
                   Navigator.pushNamed(context, '/MixedList');
                 },
               ),
               RaisedButton(
                 child: Text('Floating App Bar'),
                 onPressed: () {
-                  // Navigate to the second screen using a named route.
                   Navigator.pushNamed(context, '/FloatingAppBar');
                 },
               ),
               RaisedButton(
                 child: Text('Basic List'),
                 onPressed: () {
-                  // Navigate to the second screen using a named route.
                   Navigator.pushNamed(context, '/BasicList');
                 },
               ),
               RaisedButton(
                 child: Text('Long List'),
                 onPressed: () {
-                  // Navigate to the second screen using a named route.
                   Navigator.pushNamed(context, '/LongList');
                 },
               ),
+              RaisedButton(
+                child: Text('JSON List'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/LongJsonList');
+                },
+              )
             ],
           )
       ),

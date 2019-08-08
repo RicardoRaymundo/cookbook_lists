@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'list_item.dart';
 
 class MixedList extends StatelessWidget {
-  final List<ListItem> items = List<ListItem>.generate(
+
+  // Gera lista mista com dois componentes diferentes
+  final List<ListItem> listItems = List<ListItem>.generate(
     1000,
     (i) => i % 6 == 0
         ? HeadingItem("Heading $i")
@@ -19,13 +21,16 @@ class MixedList extends StatelessWidget {
           title: Text(title),
         ),
         body: ListView.builder(
-          // Let the ListView know how many items it needs to build.
-          itemCount: items.length,
-          // Provide a builder function. This is where the magic happens.
-          // Convert each item into a widget based on the type of item it is.
+          // Configura a quantidade de itens de acordo com o tamanho da lista.
+          itemCount: listItems.length,
+          
+          // Converte cada item em um componente baseado no tipo do item.
           itemBuilder: (context, index) {
-            final item = items[index];
+            // Pega cada item pelo indice
+            final item = listItems[index];
 
+            // Verifica se item é do tipo HeadingItem.
+            // cria instancia de ListTile de acordo com o tipo do item recebido.
             if (item is HeadingItem) {
               return ListTile(
                 title: Text(

@@ -8,16 +8,12 @@ class FloatingAppBar extends StatelessWidget {
     final title = 'Floating App Bar';
 
     return Scaffold(
-        // No appbar provided to the Scaffold, only a body with a
-        // CustomScrollView.
         body: CustomScrollView(
           slivers: <Widget>[
-            // Add the app bar to the CustomScrollView.
+            // Adiciona a appBar tipo sliver
             SliverAppBar(
-              // Provide a standard title.
               title: Text(title),
-              // Allows the user to reveal the app bar if they begin scrolling
-              // back up the list of items.
+              // Permite ao usuario revelar a appBar ao arrastar a lista para cima
               floating: true,
               // Display a placeholder widget to visualize the shrinking size.
               flexibleSpace: Placeholder(),
