@@ -56,6 +56,12 @@ class MainPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, '/LongJsonList');
                 },
+              ),
+              RaisedButton(
+                child: Text('Floating Appbar JSON List'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/FloatingAppbarJson');
+                },
               )
             ],
           )

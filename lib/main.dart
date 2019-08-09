@@ -7,6 +7,7 @@ import 'package:cookbook_lists/pages/floating_app_bar.dart';
 import 'package:cookbook_lists/pages/basic_list.dart';
 import 'package:cookbook_lists/pages/long_list.dart';
 import 'package:cookbook_lists/pages/long_list_json/long_list_json.dart';
+import 'package:cookbook_lists/pages/floating_appbar_json/floating_appbar_json.dart';
 
 
 void main() {
@@ -25,7 +26,7 @@ void main() {
       '/FloatingAppBar': (context) => FloatingAppBar(),
       '/BasicList': (context) => BasicList(),
       '/LongList': (context) => LongList(),
-      '/LongJsonList': (context) => LongJsonList(),
+      '/FloatingAppbarJson': (context) => FloatingAppbarJson(),
 
     },
   ));
