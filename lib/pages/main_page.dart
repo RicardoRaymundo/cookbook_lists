@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cookbook_lists/pages/scroll_controller/main_scroll_controller.dart';
 
 class MainPage extends StatelessWidget {
   @override
@@ -62,7 +63,13 @@ class MainPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.pushNamed(context, '/FloatingAppbarJson');
                 },
-              )
+              ),
+              RaisedButton(
+                child: Text('Scroll Controller'),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/MainScrollController');
+                },
+              ),
             ],
           )
       ),
